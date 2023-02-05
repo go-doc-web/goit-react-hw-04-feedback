@@ -1,0 +1,42 @@
+.list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button {
+  display: inline-block;
+
+  width: 120px;
+  height: 32px;
+  line-height: 32px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2em;
+  //   background-color: #fff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.button.raised {
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0.2s;
+  box-shadow: 1px 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+.button.raised:active {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.5);
+  transition-delay: 0s;
+}
+
+.good {
+  background-color: green;
+}
+
+.neutral {
+  background-color: blue;
+}
+
+.bad {
+  background-color: red;
+}
